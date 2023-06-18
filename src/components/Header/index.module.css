@@ -1,0 +1,94 @@
+.header {
+  background-color: #7c90c3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header :global img {
+  cursor: default;
+}
+
+.header :global .username {
+  color: #fff;
+  margin-left: 15px;
+  cursor: default;
+}
+
+.header :global .logout {
+  color: #2f4050;
+  margin-left: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.header :global .logout:hover {
+  text-decoration: underline;
+}
+
+.header :global .search-container {
+  margin-left: 50px;
+  position: relative;
+}
+
+.header :global .search-suggest {
+  position: absolute;
+  top: 38px;
+  width: 320px;
+  z-index: 1000;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.header :global .search-suggest-title {
+  color: #999;
+  font-size: 12px;
+  padding: 0 16px;
+}
+
+.header :global .search-suggest-item {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 16px;
+  color: #555;
+}
+
+.header :global .search-suggest-item:hover {
+  color: #555;
+  background-color: #eee;
+}
+
+.header :global .search-input {
+  border-radius: 16px;
+  transition: width 0.3s;
+  height: 32px;
+}
+
+.header :global .search-input + svg {
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.header :global .avatar-wrapper {
+  margin-left: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.header :global .avatar-image {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}

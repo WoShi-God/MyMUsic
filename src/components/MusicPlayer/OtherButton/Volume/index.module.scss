@@ -1,0 +1,19 @@
+.volume {
+    display: flex;
+
+    :global {
+        .slider {
+            display: flex;
+            align-items: center;
+            padding-left: 5px;
+            width: 150px;
+        }
+
+        .icon {
+            cursor: pointer;
+            &:hover {
+                color: #666;
+            }
+        }
+    }
+}

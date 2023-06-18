@@ -1,0 +1,33 @@
+.progressbar {
+    position: absolute;
+    width: 100%;
+    top: -8px;
+    left: 0;
+    height: 16px !important;
+    align-items: center;
+    z-index: 1001;
+
+    :global {
+        .handle {
+            z-index: 1;
+        }
+
+        .rail {
+            height: 4px !important;
+        }
+
+        .track {
+            height: 4px !important;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+    }
+}
+
+.progressbar:hover {
+    :global {
+        .track {
+            opacity: 1;
+        }
+    }
+}
